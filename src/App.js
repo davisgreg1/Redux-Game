@@ -1,13 +1,19 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Canvas from './components/Canvas';
+import propTypes from 'prop-types';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
-       This gonna be a fuckin great ass game.
+      <Canvas />
       </div>
     );
   }
+}
+
+App.propTypes = {
+  message: propTypes.string.isRequired
 }
 
 export default App;
